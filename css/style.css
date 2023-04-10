@@ -34,17 +34,15 @@ body {
 }
 
 
-.container {
-    min-width: 320px;
-}
-
 .container__wrap {
-    width: 288px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 288px;
+   /* margin-left: auto;
+    margin-right: auto;*/
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.nav {
+.nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,7 +185,8 @@ body {
     padding: 8px 12px;
 }
 
-.hidden {
+.hidden,
+.nav-desktop{
     display: none;
 }
 
@@ -206,25 +205,21 @@ body {
 }
 
 @media (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-
-    .container__wrap {
+      .container__wrap {
         width: 720px;
-        margin-left: auto;
-        margin-right: auto;
+        /*margin-left: auto;
+        margin-right: auto;*/
     }
 
     .hidden {
         display: flex;
     }
 
-    .nav .nav-items:nth-child(3) {
+    .nav-list .nav-items:nth-child(3) {
         margin-left: 240px;
     }
 
-    .nav .nav-items:nth-child(6),
+    .nav-list .nav-items:nth-child(6),
     .logo {
         margin-left: 22px;
     }
@@ -271,4 +266,50 @@ body {
         margin: 0;
         width: 50%;
     }
+}
+@media (min-width: 1120px){
+       .container__wrap {
+        width: 1056px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.nav{
+    display: none;
+}
+    .main__title
+    {        display: flex;
+        justify-content: space-between;
+        margin-top: 42px;
+        margin-bottom: 8px;
+    }
+    .main__title .title::before{
+        left: -32px;
+    }
+    .nav-desktop-list,
+    .nav-desktop{
+        display: flex;
+        align-items: center;
+
+    }
+    .title{
+        margin: 0;
+    }
+    .main__title .title::before{
+        border-radius: 2px;
+    }
+    .nav-desktop a{
+        font-size: 16px;
+        color:#1B1C21;
+    }
+    .nav-desktop .icon{
+        margin-left: 8px;
+    }
+    .nav-desktop-list .nav-desktop:last-child{
+        margin-left: 32px;
+    }
+    .slider{
+        overflow-x: hidden;
+    }
+
+
 }

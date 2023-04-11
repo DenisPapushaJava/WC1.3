@@ -11,44 +11,48 @@
 </head>
 <body>
 <header>
-    <div class="container__wrap">
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-items">
-                    <div class="decoration-line-right">
-                        <div class="icon">
-                            <div class="line"></div>
-                            <div class="line-center"></div>
-                            <div class="line"></div>
+    <div class="container">
+        <nav class="nav nav--hidden">
+            <ul class="nav__list">
+                <li class="nav__items">
+                    <div class="decoration-line decoration-line--right">
+                        <div class="icon ">
+                            <div class="icon__line"></div>
+                            <div class="icon__line--center"></div>
+                            <div class="icon__line"></div>
                         </div>
                     </div>
                 </li>
-                <li class="logo"><img class="img-logo" src="./img/cps.svg" alt="logo"></li>
-                <li class="nav-items">
-                    <div class="icon hidden">
-                        <img src="./img/menu-tel.svg" alt="icon-setting">
+                <li class="nav__items">
+                    <div class="nav__items__logo">
+                        <img src="./img/cps.svg" alt="logo">
                     </div>
                 </li>
-                <li class="nav-items">
-                    <div class="icon hidden">
-                        <img src="./img/menu-message.svg" alt="icon-setting">
+                <li class="nav__items">
+                    <div class="icon icon--hidden">
+                        <img src="./img/menu-tel.svg" alt="icon telephone">
                     </div>
                 </li>
-                <li class="nav-items">
-                    <div class="icon hidden">
-                        <img src="./img/menu-account.svg" alt="icon-setting">
+                <li class="nav__items">
+                    <div class="icon icon--hidden">
+                        <img src="./img/menu-message.svg" alt="icon message">
                     </div>
                 </li>
-                <li class="nav-items">
-                    <div class="decoration-line-left">
+                <li class="nav__items">
+                    <div class="icon icon--hidden">
+                        <img src="./img/menu-account.svg" alt="icon account">
+                    </div>
+                </li>
+                <li class="nav__items">
+                    <div class="decoration-line decoration-line--left">
                         <div class="icon">
-                            <img src="./img/menu-setting.svg" alt="icon-setting">
+                            <img src="./img/menu-setting.svg" alt="icon setting">
                         </div>
                     </div>
                 </li>
-                <li class="nav-items">
+                <li class="nav__items">
                     <div class="icon">
-                        <img src="img/menu-search.svg" alt="icon-search">
+                        <img src="./img/menu-search.svg" alt="icon search">
                     </div>
                 </li>
             </ul>
@@ -56,19 +60,19 @@
     </div>
 </header>
 <main class="main">
-    <div class="container__wrap">
-        <div class="main__title">
+    <div class="container">
+        <div class="main__head">
             <h1 class="title">Услуги и сервисы</h1>
             <ul class="nav-desktop-list">
-                <li class="nav-items nav-desktop">
-                    <a href="#">Оставить заявку</a>
-                    <div class="icon">
-                        <img src="./img/menu-setting.svg" alt="icon-setting">
+                <li class="nav__items nav__items--desktop">
+                    <a class="nav__items__link" href="#">Оставить заявку</a>
+                    <div class="icon icon--desktop">
+                        <img src="./img/menu-setting.svg" alt="icon setting">
                     </div>
                 </li>
-                <li class="nav-items nav-desktop">
-                    <a href="#">Статус ремонта</a>
-                    <div class="icon">
+                <li class="nav__items nav__items--desktop">
+                    <a class="nav__items__link nav__items__link--desktop" href="#">Статус ремонта</a>
+                    <div class="icon icon--desktop">
                         <img src="img/menu-search.svg" alt="icon-search">
                     </div>
                 </li>
@@ -78,7 +82,7 @@
         <div>
             <ul class="slider">
                 <li class="slider__item">
-                    <a class="slider__item__content active" href="#">Ремонтируемые устройства</a>
+                    <a class="slider__item__content slider__item__content--active" href="#">Ремонтируемые устройства</a>
                 </li>
                 <li class="slider__item">
                     <a class="slider__item__content" href="#">Дополнительные услуги</a>
@@ -94,9 +98,9 @@
                 </li>
             </ul>
         </div>
-        <section class="main__description">
-            <div class="description">
-                <div class="description__content">
+        <section class="description">
+            <div class="description__content">
+                <div class="description__text">
                     <p>
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                         отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
@@ -106,8 +110,9 @@
                         рекомендациям и, в свою очередь, советуют нас родным и близким.
                     </p>
                 </div>
-                <div class="read-more">
-                    <a class="link-read-more" href="#"><img class="icon-read-more" src="./img/icon-read-more.svg">
+                <div class="button-read-more">
+                    <a class="button-read-more__link" href="#"><img class="icon-read-more"
+                                                                    src="./img/icon-read-more.svg">
                         Читать
                         далее</a>
                 </div>

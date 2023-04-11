@@ -232,7 +232,7 @@ body {
 
     }
 
-    .title::before{
+    .title::before {
         left: -24px;
         border-left: 4px solid #41F6D7;
         box-shadow: none;
@@ -283,7 +283,7 @@ body {
         margin-bottom: 8px;
     }
 
-    .title::before{
+    .title::before {
         left: -32px;
     }
 
@@ -291,7 +291,6 @@ body {
     .nav__items--desktop {
         display: flex;
         align-items: center;
-
     }
 
     .title {
@@ -307,7 +306,7 @@ body {
         color: #1B1C21;
     }
 
-    .icon--desktop{
+    .icon--desktop {
         margin-left: 8px;
     }
 
